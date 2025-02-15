@@ -1,8 +1,8 @@
-- name: Home
+- name: My
   link: /
-- name: Yandex Build
-  link: https://browser.yandex.ru/corp/builds?refid=11878705
 - name: Yandex Browser
+  link: https://browser.yandex.ru/corp/builds?refid=11878705
+- name: Build
   link: https://ya.cc/6APGSB
 - name: Windows_x86
   link: https://browser-corp-data.s3.yandex.net/installers/4e893753-7f71-4665-8b32-cc0a655e0e7d/YandexBrowser.msi
