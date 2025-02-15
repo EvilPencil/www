@@ -4,10 +4,12 @@
     {%- include head.html -%}
   </head>
   <body>
+    {%- include nav.html -%}
     <div>
-      {%- include nav.html -%}
       {{ content }}
     </div>
+    {%- include subscribe.html -%}
+    {%- include footer.html -%}
   </body>
 </html>
 
