@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Yandex Build
+  link: https://browser.yandex.ru/corp/builds?refid=11878705
+- name: Yandex Browser
+  link: https://ya.cc/6APGSB
+- name: Windows_x86
+  link: https://browser-corp-data.s3.yandex.net/installers/4e893753-7f71-4665-8b32-cc0a655e0e7d/YandexBrowser.msi
+- name: Windows_x64
+  link: https://browser-corp-data.s3.yandex.net/installers/83fbdcd0-d1cf-4a4b-9362-b9b0d12bbc57/YandexBrowser.msi
