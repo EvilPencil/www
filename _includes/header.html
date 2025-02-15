@@ -1,0 +1,63 @@
+<header>
+  <section class="w-full overflow-hidden relatve">
+   <div class="relative w-full mx-auto 2xl:max-w-7xl">
+    <div x-data="{ open: false }" class="relative flex flex-col w-full px-8 py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-12 lg:px-32 max-w-7xl">
+     <div class="flex flex-row items-center justify-between text-blue-950 lg:justify-start">
+      <a href="https://danilovandrey.ru/" class="inline-flex items-center gap-3">
+        <span class="text-2xl font-display"> &nbsp; Адрей <strong>Данилов</strong></span></a>
+       <button @click="open = !open" class="inline-flex items-center justify-center p-2 text-blue-950 hover:text-blue-400 focus:outline-none focus:text-blue-950 md:hidden">
+         <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+           <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+           <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+         </svg>
+       </button>
+       {%- include nav.html -%}
+   </div>
+  </section>
+  <section>
+      <div
+        class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pb-24 lg:pt-12"
+      >
+        <div class="hidden lg:grid mt-12 lg:grid-cols-4">
+          <img
+            src="form%20backend%20service_files/widget0.svg"
+            class="rounded-3xl rotate-6 w-full"
+          />
+          <img
+            src="form%20backend%20service_files/widget1.svg"
+            class="rounded-3xl -rotate-12 w-full"
+          />
+          <img
+            src="form%20backend%20service_files/widget2.svg"
+            class="rounded-3xl w-full rotate-6"
+          />
+          <img
+            class="rounded-3xl w-full -rotate-12"
+            src="form%20backend%20service_files/widget3.svg"
+          />
+        </div>
+        <div class="lg:mt-12">
+          <h1
+            class="text-4xl font-semibold font-display text-blue-950 sm:text-6xl"
+          >
+            Hello <a href="https://danilovandrey.ru/">World!!</a>
+            <span class="lg:block">I'm Andrey Danilov.</span>
+          </h1>
+          <p class="mt-4 text-slate-600 text-base max-w-3xl">
+            This is my website
+          </p>
+          <div class="mt-12 flex flex-col lg:flex-row lg:items-center w-full">
+            <div class="relative flex flex-col gap-2 md:flex-row">
+              <a
+                target="_blank"
+                href="https://danilovandrey.ru/blog"
+                class="items-center inline-flex w-full focus:outline-disc bg-green-500 duration-500 focus:ring-2 focus:ring-green-600 focus:ring-offset-2 font-medium sm:w-auto h-12 hover:bg-green-600 justify-center px-6 py-1 rounded-full text-white text-center text-sm"
+                >Read Blog</a
+              >
+            </div>
+            <div <="" div=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+</header>
