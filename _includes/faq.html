@@ -1,0 +1,194 @@
+<section>
+      <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
+        <div>
+          <div class="max-w-3xl">
+            <h1
+              class="text-4xl font-semibold font-display text-blue-950 lg:text-6xl"
+            >
+              ЧаВо
+            </h1>
+            <p
+              class="max-w-sm mt-4 text-slate-600 text-base"
+              >
+              Получите ответы на общие вопросы о бо мне. Если 
+              у вас есть больше вопросов, не стесняйтесь обращаться.
+            </p>
+          </div>
+          <div
+            x-data="{
+        activeAccordion: '',
+        setActiveAccordion(id) {
+            this.activeAccordion = (this.activeAccordion == id) ? '' : id
+        }
+    }"
+            class="relative w-full space-y-6 text-base mt-12 lg:mt-24"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+              class="duration-200 ease-out cursor-pointer group border-transparent text-slate-500 hover:text-blue-950"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display"
+              >
+                <span>Какое у меня отчество?</span>
+                <div
+                  :class="{ 'rotate-90': activeAccordion==id }"
+                  class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out"
+                >
+                  <div
+                    class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                  <div
+                    :class="{ 'rotate-90': activeAccordion==id }"
+                    class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                </div>
+              </button>
+              <div
+                x-show="activeAccordion==id"
+                x-collapse=""
+                style="display: none"
+              >
+                <div class="pt-0 pb-8 opacity-70">
+                  Викторович
+                </div>
+              </div>
+            </div>
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+              class="duration-200 ease-out cursor-pointer group border-transparent text-slate-500 hover:text-blue-950"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display"
+              >
+                <span>День моего рождения?</span>
+                <div
+                  :class="{ 'rotate-90': activeAccordion==id }"
+                  class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out"
+                >
+                  <div
+                    class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                  <div
+                    :class="{ 'rotate-90': activeAccordion==id }"
+                    class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                </div>
+              </button>
+              <div
+                x-show="activeAccordion==id"
+                x-collapse=""
+                style="display: none"
+              >
+                <div class="pt-0 pb-8 opacity-70">
+                  Я родился 3 сентября 1982 года.
+                </div>
+              </div>
+            </div>
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+              class="duration-200 ease-out cursor-pointer group border-transparent text-slate-500 hover:text-blue-950"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display"
+              >
+                <span>В какой стране родился?</span>
+                <div
+                  :class="{ 'rotate-90': activeAccordion==id }"
+                  class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out"
+                >
+                  <div
+                    class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                  <div
+                    :class="{ 'rotate-90': activeAccordion==id }"
+                    class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                </div>
+              </button>
+              <div
+                x-show="activeAccordion==id"
+                x-collapse=""
+                style="display: none"
+              >
+                <div class="pt-0 pb-8 opacity-70">
+                  Я родился в СССР
+                </div>
+              </div>
+            </div>
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+              class="duration-200 ease-out cursor-pointer group border-transparent text-slate-500 hover:text-blue-950"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display"
+              >
+                <span>В каком городе родился?</span>
+                <div
+                  :class="{ 'rotate-90': activeAccordion==id }"
+                  class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out"
+                >
+                  <div
+                    class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                  <div
+                    :class="{ 'rotate-90': activeAccordion==id }"
+                    class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                </div>
+              </button>
+              <div
+                x-show="activeAccordion==id"
+                x-collapse=""
+                style="display: none"
+              >
+                <div class="pt-0 pb-8 opacity-70">
+                  Я родился в городе Волгодонске
+                </div>
+              </div>
+            </div>
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
+              class="duration-200 ease-out cursor-pointer group border-transparent text-slate-500 hover:text-blue-950"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full text-lg lg:text-3xl text-blue-950 select-none font-display"
+              >
+                <span>Чем занимаешся в свободное время?</span>
+                <div
+                  :class="{ 'rotate-90': activeAccordion==id }"
+                  class="relative flex items-center justify-center w-2.5 h-2.5 duration-300 ease-out"
+                >
+                  <div
+                    class="absolute w-0.5 h-full bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                  <div
+                    :class="{ 'rotate-90': activeAccordion==id }"
+                    class="absolute w-full h-0.5 ease duration-500 bg-white group-hover:bg-slate-300 rounded-full"
+                  ></div>
+                </div>
+              </button>
+              <div
+                x-show="activeAccordion==id"
+                x-collapse=""
+                style="display: none"
+              >
+                <div class="pt-0 pb-8 opacity-70">
+                  В свободное время веду блог на этом сайте.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
