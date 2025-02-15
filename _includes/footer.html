@@ -1,0 +1,46 @@
+    <footer 
+      class="overflow-hidden relative"
+      >
+      <div
+        class="px-8 md:px-12 lg:px-24 max-w-7xl mx-auto py-12 lg:py-24"
+        >
+        <div
+          class="gap-8 flex flex-col lg:flex-row items-baseline"
+          >
+          <a
+            href="https://danilovandrey.ru/"
+            class="inline-flex items-center gap-3 text-blue-950 font-display"
+          >
+            <span
+              class="text-xl lg:text-6xl font-bold uppercase"
+              >
+              &nbsp;Андрей <strong>Данилов</strong></span>
+          </a>
+          <div
+            class="lg:col-span-full lg:ml-auto"
+            >
+            <ul
+              role="list"
+              class="flex flex-col gap-1 lg:flex-row w-full lg:gap-6"
+            >
+              {% for item in site.data.footer %}
+              <li>
+                <a
+                  href="https://fabform.lemonsqueezy.com/affiliates"
+                  class="text-sm uppercase font-medium text-slate-500 hover:text-green-500"
+                  {% if page.url == item.link %}
+                  {% endif %}
+                  >                  
+                </a>
+                {% endfor %}
+              </li>
+            </ul>
+          </div>
+          <p 
+            class="mt-8 text-xs leading-5 text-slate-500 md:order-1 md:mt-0"
+            >
+            © 2025 W3Craft. All rights reserved
+          </p>
+        </div>
+      </div>      
+    </footer>
