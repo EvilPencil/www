@@ -2,27 +2,22 @@
       <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
         <div>
           <div class="max-w-3xl">
-            <h1
-              class="text-4xl font-semibold font-display text-blue-950 lg:text-6xl"
-            >
+            <h1 class="text-4xl font-semibold font-display text-blue-950 lg:text-6xl">
               ЧаВо
             </h1>
-            <p
-              class="max-w-sm mt-4 text-slate-600 text-base"
-              >
+            <p class="max-w-sm mt-4 text-slate-600 text-base">
               Получите ответы на общие вопросы о бо мне. Если 
               у вас есть больше вопросов, не стесняйтесь обращаться.
             </p>
           </div>
           <div
             x-data="{
-        activeAccordion: '',
-        setActiveAccordion(id) {
-            this.activeAccordion = (this.activeAccordion == id) ? '' : id
-        }
-    }"
-            class="relative w-full space-y-6 text-base mt-12 lg:mt-24"
-          >
+              activeAccordion: '',
+              setActiveAccordion(id) {
+                this.activeAccordion = (this.activeAccordion == id) ? '' : id
+              }
+            }"
+            class="relative w-full space-y-6 text-base mt-12 lg:mt-24">
             <div
               x-data="{ id: $id('accordion') }"
               :class="{ 'border-slate-200/60 text-blue-950' : activeAccordion==id, 'border-transparent text-slate-500 hover:text-blue-950' : activeAccordion!=id }"
