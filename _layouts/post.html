@@ -1,21 +1,41 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-{{ content }}
-<footer>
-    <div class="inline-flex text-blue-950 space-x-1 items-center mt-6">
-        <p class="text-xs"> Geoffrey Callaghan </p> <span aria-hidden="true">·</span>
-        <div class="flex text-xs"> <time datetime="2020-03-16"> Tue Aug 22</time> </div>
+<section>
+    <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
+        <div class="bg-green-100 p-8 lg:p-20 text-center rounded-3xl">
+            <div class="flex flex-col lg:flex-row justify-between w-full gap-12">
+                <div>
+                    <div class="sm:inline-flex space-x-1 w-full justify-center">
+                        <p class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 gap-3">
+                            {{ page.author }} <span aria-hidden="true">·</span>
+                            <time datetime="Tue Aug 22 2023 02:00:00 GMT+0200 (Central European Summer Time)">{{ post.date | date: '%B %-d, %Y' }}</time> </p>
+                    </div>
+                    <p class="text-3xl mt-12 font-semibold font-display text-blue-950 lg:text-8xl"> {{ page.title }} </p>
+                    <p class="text-sm mt-2 text-slate-500 max-w-xl mx-auto"> <em>{{ page.date | date_to_string }} - {{ page.author }}</em> </p>
+                    <ul class="flex flex-wrap gap-2 mt-4 justify-center" role="list">
+                        <a href="https://danilovandrey.ru/tags/Astro">
+                            <li
+                                class=" inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700">
+                                Astro </li>
+                        </a>
+                        <a href="https://danilovandrey.ru/tags/Theme">
+                            <li
+                                class=" inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700">
+                                Theme </li>
+                        </a> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="prose-styles max-w-3xl mx-auto mt-12">
+            {{ content }}
+        </div>
+        <div>
+            <dl>
+              <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
+              <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
+            </dl>
+        </div>
     </div>
-</footer>
-<div>
-    <h6>{{ post.date | date: '%B %-d, %Y' }}</h6>
-  
-    <dl>
-      <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
-      <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
-    </dl>
-</div>
+</section>
