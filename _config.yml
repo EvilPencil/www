@@ -14,3 +14,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
