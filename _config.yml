@@ -1,6 +1,12 @@
 title: danilovandrey
 description: This is the repository for the danilovandrey website. 
 
+collections:
+  pages:
+    output: true
+    permalink: "/:name"
+
+
 # Front Matter Defaults
 defaults:
   - scope:
