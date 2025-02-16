@@ -5,7 +5,12 @@ layout: default
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
 {{ content }}
-
+<footer>
+    <div class="inline-flex text-blue-950 space-x-1 items-center mt-6">
+        <p class="text-xs"> Geoffrey Callaghan </p> <span aria-hidden="true">·</span>
+        <div class="flex text-xs"> <time datetime="2020-03-16"> Tue Aug 22</time> </div>
+    </div>
+</footer>
 <div>
     <h6>{{ post.date | date: '%B %-d, %Y' }}</h6>
   
