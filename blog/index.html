@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog
+---
+<section>
+    <div class="relative px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-24">
+        <div class="bg-green-100 p-8 lg:p-20 text-center rounded-3xl">
+            <h1 class="text-3xl font-semibold font-display text-blue-950 lg:text-7xl">
+                Добро пожаловать!
+            </h1>
+            <p class="mt-4 text-slate-600 text-base max-w-md mx-auto">
+                В этом блоге я пишу всё что считаю нужным написать.
+            </p>
+        </div>
+        <ul class="grid grid-cols-1 mt-12 list-none gap-x-2 gap-y-24 lg:mt-24">
+            {% for post in site.posts %}
+            <li> <a href="{{ post.url }}" title="{{ post.title }}"
+                    class="group flex flex-col h-full justify-between">
+                    <article class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        <div class="w-full"> <img class="aspect-[384/246] object-cover bg-center h-full rounded-2xl"
+                                src="assets/images/astro-starter-theme.jpg" alt="{{ post.title }}"> </div>
+                        <div
+                            class="flex flex-col items-start justify-between flex-1 w-full mt-4 p-4 lg:col-span-2 order-first">
+                            <div class="w-full">
+                                <div>
+                                    <p class="text-lg font-display text-blue-950 lg:text-7xl"> {{ post.title }}
+                                    </p>
+                                </div>
+                                <p class="mt-2 text-sm text-slate-600 line-clamp-3 lg:text-xl"> {{ post.title }}
+                                </p>
+                            </div>
+                            <footer>
+                                <div class="inline-flex text-blue-950 space-x-1 items-center mt-6">
+                                    <p class="text-xs"> Geoffrey Callaghan </p> <span aria-hidden="true">·</span>
+                                    <div class="flex text-xs"> <time datetime="2020-03-16"> Tue Aug 22</time> </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </a>
+                {{ post.excerpt }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
