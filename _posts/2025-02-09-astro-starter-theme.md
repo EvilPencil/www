@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Geoffrey Callaghan
 ---
 
 Astro is a popular static site generator that is ideal for crafting fast and seamless content-rich websites. With its lightweight design, user-friendly structure, and easy learning curve, it appeals to developers of all skill levels. We love Astro here at FabForm.

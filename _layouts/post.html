@@ -2,3 +2,19 @@
 layout: default
 title: post
 ---
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+{{ content }}
+
+<div>
+    <h6>{{ post.date | date: '%B %-d, %Y' }}</h6>
+  
+    <dl>
+      <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
+      <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
+    </dl>
+</div>
