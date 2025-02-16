@@ -7,23 +7,28 @@ layout: default
             <div class="flex flex-col lg:flex-row justify-between w-full gap-12">
                 <div>
                     <div class="sm:inline-flex space-x-1 w-full justify-center">
-                        <p class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 gap-3">
-                            {{ page.author }} <span aria-hidden="true">·</span>
-                            <time datetime="Tue Aug 22 2023 02:00:00 GMT+0200 (Central European Summer Time)">{{ post.date | date: '%B %-d, %Y' }}</time> </p>
+                        <p
+                            class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 gap-3">
+                            {{ page.date | date_to_string }} - {{ page.author }} <span aria-hidden="true">·</span>
+                            <time>{{ post.date | date: '%B %-d, %Y' }}</time>
+                        </p>
                     </div>
-                    <p class="text-3xl mt-12 font-semibold font-display text-blue-950 lg:text-8xl"> {{ page.title }} </p>
-                    <p class="text-sm mt-2 text-slate-500 max-w-xl mx-auto"> <em>{{ page.date | date_to_string }} - {{ page.author }}</em> </p>
+                    <p class="text-3xl mt-12 font-semibold font-display text-blue-950 lg:text-8xl"> {{ page.title }}
+                    </p>
+                    <p class="text-sm mt-2 text-slate-500 max-w-xl mx-auto"> <em>{{ page.author }}</em> </p>
                     <ul class="flex flex-wrap gap-2 mt-4 justify-center" role="list">
                         <a href="https://danilovandrey.ru/tags/Astro">
                             <li
                                 class=" inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700">
-                                Astro </li>
+                                Astro
+                            </li>
                         </a>
                         <a href="https://danilovandrey.ru/tags/Theme">
                             <li
                                 class=" inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700">
-                                Theme </li>
-                        </a> 
+                                Theme
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </div>
