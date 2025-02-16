@@ -24,3 +24,11 @@ defaults:
 # Conversion
 markdown: kramdown
 highlighter: rouge
+
+# Pagination 
+paginate: 10
+paginate_path: "/blog/page/:num"
+
+# Plugins
+plugins:
+  - jekyll-paginate
