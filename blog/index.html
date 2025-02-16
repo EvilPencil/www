@@ -29,6 +29,12 @@ title: Blog
                                 <p class="mt-2 text-sm text-slate-600 line-clamp-3 lg:text-xl"> {{ post.title }}
                                 </p>
                             </div>
+                            <div>
+                                <dl>
+                                  <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
+                                  <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
+                                </dl>
+                            </div>
                             <footer>
                                 <div class="inline-flex text-blue-950 space-x-1 items-center mt-6">
                                     <p class="text-xs"> Geoffrey Callaghan </p> <span aria-hidden="true">·</span>

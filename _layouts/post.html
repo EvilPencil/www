@@ -31,11 +31,5 @@ layout: default
         <div class="prose-styles max-w-3xl mx-auto mt-12">
             {{ content }}
         </div>
-        <div>
-            <dl>
-              <dt><a href="{{ post.url }}">{{ post.title | strip_html }}</a></dt>
-              <dd>{{ post.content | strip_html | truncatewords: 30 }}</dd>
-            </dl>
-        </div>
     </div>
 </section>
