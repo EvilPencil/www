@@ -1,6 +1,6 @@
 title: danilovandrey
 description: This is the repository for the danilovandrey website.
-baseurl: ""
+
 
 collections:
   pages:
