@@ -14,8 +14,7 @@ title: Blog
         </div>
         <ul class="grid grid-cols-1 mt-12 list-none gap-x-2 gap-y-24 lg:mt-24">
             {% for post in site.posts %}
-            <li> <a href="{{ post.url }}" title="{{ post.title }}"
-                    class="group flex flex-col h-full justify-between">
+            <li> <a href="{{ post.url }}" title="{{ post.title }}" class="group flex flex-col h-full justify-between">
                     <article class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         <div class="w-full"> <img class="aspect-[384/246] object-cover bg-center h-full rounded-2xl"
                                 src="{{ post.images }}" alt="{{ post.date | date: '%B %-d, %Y' }}"> </div>
@@ -33,7 +32,6 @@ title: Blog
                         </div>
                     </article>
                 </a>
-                
             </li>
             {% endfor %}
         </ul>

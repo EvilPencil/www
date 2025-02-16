@@ -4,9 +4,9 @@
   var We = Object.prototype.hasOwnProperty,
     Me = Object.prototype.propertyIsEnumerable;
   var ne = (e, t, r) =>
-      t in e
-        ? je(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r })
-        : (e[t] = r),
+    t in e
+      ? je(e, t, { enumerable: !0, configurable: !0, writable: !0, value: r })
+      : (e[t] = r),
     X = (e, t) => {
       for (var r in t || (t = {})) We.call(t, r) && ne(e, r, t[r]);
       if (re) for (var r of re(t)) Me.call(t, r) && ne(e, r, t[r]);
@@ -15,12 +15,12 @@
   var N = (e, t, r) =>
     new Promise((o, a) => {
       var n = (f) => {
-          try {
-            c(r.next(f));
-          } catch (s) {
-            a(s);
-          }
-        },
+        try {
+          c(r.next(f));
+        } catch (s) {
+          a(s);
+        }
+      },
         i = (f) => {
           try {
             c(r.throw(f));
@@ -51,8 +51,8 @@
       return n instanceof r
         ? n
         : new r(function (i) {
-            i(n);
-          });
+          i(n);
+        });
     }
     return new (r || (r = Promise))(function (n, i) {
       function c(u) {
@@ -77,14 +77,14 @@
   }
   function F(e, t) {
     var r = {
-        label: 0,
-        sent: function () {
-          if (n[0] & 1) throw n[1];
-          return n[1];
-        },
-        trys: [],
-        ops: [],
+      label: 0,
+      sent: function () {
+        if (n[0] & 1) throw n[1];
+        return n[1];
       },
+      trys: [],
+      ops: [],
+    },
       o,
       a,
       n,
@@ -92,9 +92,9 @@
     return (
       (i = { next: c(0), throw: c(1), return: c(2) }),
       typeof Symbol == "function" &&
-        (i[Symbol.iterator] = function () {
-          return this;
-        }),
+      (i[Symbol.iterator] = function () {
+        return this;
+      }),
       i
     );
     function c(s) {
@@ -104,17 +104,17 @@
     }
     function f(s) {
       if (o) throw new TypeError("Generator is already executing.");
-      for (; i && ((i = 0), s[0] && (r = 0)), r; )
+      for (; i && ((i = 0), s[0] && (r = 0)), r;)
         try {
           if (
             ((o = 1),
-            a &&
+              a &&
               (n =
                 s[0] & 2
                   ? a.return
                   : s[0]
-                  ? a.throw || ((n = a.return) && n.call(a), 0)
-                  : a.next) &&
+                    ? a.throw || ((n = a.return) && n.call(a), 0)
+                    : a.next) &&
               !(n = n.call(a, s[1])).done)
           )
             return n;
@@ -134,7 +134,7 @@
             default:
               if (
                 ((n = r.trys),
-                !(n = n.length > 0 && n[n.length - 1]) &&
+                  !(n = n.length > 0 && n[n.length - 1]) &&
                   (s[0] === 6 || s[0] === 2))
               ) {
                 r = 0;
@@ -183,14 +183,14 @@
     var r = window.requestIdleCallback;
     return r
       ? new Promise(function (o) {
-          return r.call(
-            window,
-            function () {
-              return o();
-            },
-            { timeout: t }
-          );
-        })
+        return r.call(
+          window,
+          function () {
+            return o();
+          },
+          { timeout: t }
+        );
+      })
       : O(Math.min(e, t));
   }
   function pe(e) {
@@ -201,13 +201,13 @@
       var r = e();
       pe(r)
         ? r.then(
-            function (o) {
-              return t(!0, o);
-            },
-            function (o) {
-              return t(!1, o);
-            }
-          )
+          function (o) {
+            return t(!0, o);
+          },
+          function (o) {
+            return t(!1, o);
+          }
+        )
         : t(!0, r);
     } catch (o) {
       t(!1, o);
@@ -240,7 +240,7 @@
     );
   }
   function T(e) {
-    e.then(void 0, function () {});
+    e.then(void 0, function () { });
   }
   function j(e, t) {
     (e = [e[0] >>> 16, e[0] & 65535, e[1] >>> 16, e[1] & 65535]),
@@ -295,12 +295,12 @@
       t === 32
         ? [e[1], e[0]]
         : t < 32
-        ? [(e[0] << t) | (e[1] >>> (32 - t)), (e[1] << t) | (e[0] >>> (32 - t))]
-        : ((t -= 32),
-          [
-            (e[1] << t) | (e[0] >>> (32 - t)),
-            (e[0] << t) | (e[1] >>> (32 - t)),
-          ])
+          ? [(e[0] << t) | (e[1] >>> (32 - t)), (e[1] << t) | (e[0] >>> (32 - t))]
+          : ((t -= 32),
+            [
+              (e[1] << t) | (e[0] >>> (32 - t)),
+              (e[0] << t) | (e[1] >>> (32 - t)),
+            ])
     );
   }
   function x(e, t) {
@@ -309,8 +309,8 @@
       t === 0
         ? e
         : t < 32
-        ? [(e[0] << t) | (e[1] >>> (32 - t)), e[1] << t]
-        : [e[1] << (t - 32), 0]
+          ? [(e[0] << t) | (e[1] >>> (32 - t)), e[1] << t]
+          : [e[1] << (t - 32), 0]
     );
   }
   function y(e, t) {
@@ -340,23 +340,23 @@
     for (u = 0; u < o; u = u + 16)
       (i = [
         (e.charCodeAt(u + 4) & 255) |
-          ((e.charCodeAt(u + 5) & 255) << 8) |
-          ((e.charCodeAt(u + 6) & 255) << 16) |
-          ((e.charCodeAt(u + 7) & 255) << 24),
+        ((e.charCodeAt(u + 5) & 255) << 8) |
+        ((e.charCodeAt(u + 6) & 255) << 16) |
+        ((e.charCodeAt(u + 7) & 255) << 24),
         (e.charCodeAt(u) & 255) |
-          ((e.charCodeAt(u + 1) & 255) << 8) |
-          ((e.charCodeAt(u + 2) & 255) << 16) |
-          ((e.charCodeAt(u + 3) & 255) << 24),
+        ((e.charCodeAt(u + 1) & 255) << 8) |
+        ((e.charCodeAt(u + 2) & 255) << 16) |
+        ((e.charCodeAt(u + 3) & 255) << 24),
       ]),
         (c = [
           (e.charCodeAt(u + 12) & 255) |
-            ((e.charCodeAt(u + 13) & 255) << 8) |
-            ((e.charCodeAt(u + 14) & 255) << 16) |
-            ((e.charCodeAt(u + 15) & 255) << 24),
+          ((e.charCodeAt(u + 13) & 255) << 8) |
+          ((e.charCodeAt(u + 14) & 255) << 16) |
+          ((e.charCodeAt(u + 15) & 255) << 24),
           (e.charCodeAt(u + 8) & 255) |
-            ((e.charCodeAt(u + 9) & 255) << 8) |
-            ((e.charCodeAt(u + 10) & 255) << 16) |
-            ((e.charCodeAt(u + 11) & 255) << 24),
+          ((e.charCodeAt(u + 9) & 255) << 8) |
+          ((e.charCodeAt(u + 10) & 255) << 16) |
+          ((e.charCodeAt(u + 11) & 255) << 24),
         ]),
         (i = C(i, f)),
         (i = Z(i, 31)),
@@ -422,9 +422,9 @@
       (a = j(a, n)),
       (n = j(n, a)),
       ("00000000" + (a[0] >>> 0).toString(16)).slice(-8) +
-        ("00000000" + (a[1] >>> 0).toString(16)).slice(-8) +
-        ("00000000" + (n[0] >>> 0).toString(16)).slice(-8) +
-        ("00000000" + (n[1] >>> 0).toString(16)).slice(-8)
+      ("00000000" + (a[1] >>> 0).toString(16)).slice(-8) +
+      ("00000000" + (n[0] >>> 0).toString(16)).slice(-8) +
+      ("00000000" + (n[1] >>> 0).toString(16)).slice(-8)
     );
   }
   function Ie(e) {
@@ -472,15 +472,15 @@
   function _e(e) {
     for (
       var t,
-        r,
-        o = "Unexpected syntax '".concat(e, "'"),
-        a = /^\s*([a-z-]*)(.*)$/i.exec(e),
-        n = a[1] || void 0,
-        i = {},
-        c = /([.:#][\w-]+|\[.+?\])/gi,
-        f = function (d, v) {
-          (i[d] = i[d] || []), i[d].push(v);
-        };
+      r,
+      o = "Unexpected syntax '".concat(e, "'"),
+      a = /^\s*([a-z-]*)(.*)$/i.exec(e),
+      n = a[1] || void 0,
+      i = {},
+      c = /([.:#][\w-]+|\[.+?\])/gi,
+      f = function (d, v) {
+        (i[d] = i[d] || []), i[d].push(v);
+      };
       ;
 
     ) {
@@ -561,8 +561,8 @@
   }
   function De(e, t, r) {
     var o = Object.keys(e).filter(function (n) {
-        return Te(r, n);
-      }),
+      return Te(r, n);
+    }),
       a = ae(o, function (n) {
         return Ee(e[n], t);
       });
@@ -671,12 +671,12 @@
       V([
         "buildID" in navigator,
         "MozAppearance" in
-          ((t =
-            (e = document.documentElement) === null || e === void 0
-              ? void 0
-              : e.style) !== null && t !== void 0
-            ? t
-            : {}),
+        ((t =
+          (e = document.documentElement) === null || e === void 0
+            ? void 0
+            : e.style) !== null && t !== void 0
+          ? t
+          : {}),
         "onmozfullscreenchange" in r,
         "mozInnerScreenX" in r,
         "CSSMozDocumentRule" in r,
@@ -797,7 +797,7 @@
       r = 500,
       o = 500,
       a = 5e3,
-      n = function () {},
+      n = function () { },
       i = new Promise(function (c, f) {
         var s = !1,
           u = 0,
@@ -806,10 +806,10 @@
           return c(h.renderedBuffer);
         };
         var d = function () {
-            setTimeout(function () {
-              return f(ue("timeout"));
-            }, Math.min(o, l + a - Date.now()));
-          },
+          setTimeout(function () {
+            return f(ue("timeout"));
+          }, Math.min(o, l + a - Date.now()));
+        },
           v = function () {
             try {
               var h = e.startRendering();
@@ -929,11 +929,11 @@
   function $e(e) {
     for (
       var t = _e(e),
-        r = t[0],
-        o = t[1],
-        a = document.createElement(r != null ? r : "div"),
-        n = 0,
-        i = Object.keys(o);
+      r = t[0],
+      o = t[1],
+      a = document.createElement(r != null ? r : "div"),
+      n = 0,
+      i = Object.keys(o);
       n < i.length;
       n++
     ) {
@@ -1042,13 +1042,13 @@
         u = function () {
           for (
             var g = {},
-              b = function (G) {
-                g[G] = P.map(function (z) {
-                  return f(G, z);
-                });
-              },
-              w = 0,
-              W = se;
+            b = function (G) {
+              g[G] = P.map(function (z) {
+                return f(G, z);
+              });
+            },
+            w = 0,
+            W = se;
             w < W.length;
             w++
           ) {
@@ -1138,11 +1138,11 @@
       (t.globalCompositeOperation = "multiply");
     for (
       var r = 0,
-        o = [
-          ["#f2f", 40, 40],
-          ["#2ff", 80, 40],
-          ["#ff2", 60, 80],
-        ];
+      o = [
+        ["#f2f", 40, 40],
+        ["#2ff", 80, 40],
+        ["#ff2", 60, 80],
+      ];
       r < o.length;
       r++
     ) {
@@ -1237,8 +1237,8 @@
                     ? D
                       ? [2, H([], D, !0)]
                       : Je()
-                      ? [4, Be()]
-                      : [3, 2]
+                        ? [4, Be()]
+                        : [3, 2]
                     : [3, 2]
                 );
               case 1:
@@ -1346,24 +1346,24 @@
   function Mt() {
     for (
       var e = [],
-        t = 0,
-        r = [
-          "chrome",
-          "safari",
-          "__crWeb",
-          "__gCrWeb",
-          "yandex",
-          "__yb",
-          "__ybro",
-          "__firefox__",
-          "__edgeTrackingPreventionStatistics",
-          "webkit",
-          "oprt",
-          "samsungAr",
-          "ucweb",
-          "UCShellJava",
-          "puffinDevice",
-        ];
+      t = 0,
+      r = [
+        "chrome",
+        "safari",
+        "__crWeb",
+        "__gCrWeb",
+        "yandex",
+        "__yb",
+        "__ybro",
+        "__firefox__",
+        "__edgeTrackingPreventionStatistics",
+        "webkit",
+        "oprt",
+        "samsungAr",
+        "ucweb",
+        "UCShellJava",
+        "puffinDevice",
+      ];
       t < r.length;
       t++
     ) {
@@ -1740,11 +1740,11 @@
           case 0:
             for (
               r = document,
-                o = r.createElement("div"),
-                a = new Array(e.length),
-                n = {},
-                fe(o),
-                f = 0;
+              o = r.createElement("div"),
+              a = new Array(e.length),
+              n = {},
+              fe(o),
+              f = 0;
               f < e.length;
               ++f
             )
@@ -2118,30 +2118,30 @@
                   (n = c.sent()),
                   (i = cr(n)),
                   (t || (o != null && o.debug)) &&
-                    console.log(
-                      "Copy the text below to get the debug data:\n\n```\nversion: "
-                        .concat(
-                          i.version,
-                          `
+                  console.log(
+                    "Copy the text below to get the debug data:\n\n```\nversion: "
+                      .concat(
+                        i.version,
+                        `
 userAgent: `
-                        )
-                        .concat(
-                          navigator.userAgent,
-                          `
+                      )
+                      .concat(
+                        navigator.userAgent,
+                        `
 timeBetweenLoadAndGet: `
-                        )
-                        .concat(
-                          a - r,
-                          `
+                      )
+                      .concat(
+                        a - r,
+                        `
 visitorId: `
-                        )
-                        .concat(
-                          i.visitorId,
-                          `
+                      )
+                      .concat(
+                        i.visitorId,
+                        `
 components: `
-                        )
-                        .concat(Se(n), "\n```")
-                    ),
+                      )
+                      .concat(Se(n), "\n```")
+                  ),
                   [2, i]
                 );
             }
@@ -2207,12 +2207,12 @@ components: `
           let f = r();
           if (
             (M && f && console.info("Retrieved click ID from the cookie:", f),
-            M &&
+              M &&
               c &&
               console.info("Retrieved affiliate ID from the `track` param:", c),
-            c || (c = t()),
-            M && c && console.info("Retrieved affiliate ID from the URL:", c),
-            !c && !f)
+              c || (c = t()),
+              M && c && console.info("Retrieved affiliate ID from the URL:", c),
+              !c && !f)
           ) {
             M && console.warn("No affiliate ID or click ID detected");
             return;
@@ -2286,7 +2286,7 @@ components: `
           u < s.length;
           u++
         ) {
-          for (var l = s[u]; l.charAt(0) === " "; )
+          for (var l = s[u]; l.charAt(0) === " ";)
             l = l.substring(1, l.length);
           if (l.indexOf(f) === 0) return l.substring(f.length, l.length);
         }
@@ -2298,13 +2298,13 @@ components: `
     var e, t;
     S.LemonSqueezyAffiliate || (S.LemonSqueezyAffiliate = new hr()),
       (t = (e = S.lemonSqueezyAffiliateConfig) == null ? void 0 : e.onReady) ==
-        null || t.call(e, S.LemonSqueezyAffiliate),
+      null || t.call(e, S.LemonSqueezyAffiliate),
       dr && S.LemonSqueezyAffiliate.Track();
   };
   S.addEventListener
     ? S.addEventListener("load", S.createLemonSqueezyAffiliate)
     : S.attachEvent &&
-      S.attachEvent("onload", window.createLemonSqueezyAffiliate);
+    S.attachEvent("onload", window.createLemonSqueezyAffiliate);
   var te = class {
     constructor(t) {
       (this.state = {
@@ -2314,17 +2314,17 @@ components: `
       }),
         (this.observer = void 0),
         this.hasMutationObserver() &&
-          (this.observer = new window.MutationObserver((r) => {
-            r.forEach((o) => {
-              if (o.type === "attributes") {
-                if (o.attributeName !== "href") return;
-                let a = o.target.href,
-                  n = this.getNodeData(o.target);
-                if (n.is && n.is === a) return;
-              }
-              this.traverse(o.target);
-            });
-          }));
+        (this.observer = new window.MutationObserver((r) => {
+          r.forEach((o) => {
+            if (o.type === "attributes") {
+              if (o.attributeName !== "href") return;
+              let a = o.target.href,
+                n = this.getNodeData(o.target);
+              if (n.is && n.is === a) return;
+            }
+            this.traverse(o.target);
+          });
+        }));
     }
     traverse(t = document.body) {
       if (typeof t != "object" || typeof t.getElementsByTagName != "function")
@@ -2367,12 +2367,12 @@ components: `
             this.traverse(),
             this.hasMutationObserver() && this.observer
               ? this.observer.observe(document.body, {
-                  childList: !0,
-                  subtree: !0,
-                  attributes: !0,
-                  characterData: !0,
-                  attributeFilter: ["href"],
-                })
+                childList: !0,
+                subtree: !0,
+                attributes: !0,
+                characterData: !0,
+                attributeFilter: ["href"],
+              })
               : console.warn("Browser does not support MutationObserver."))
           : window.addEventListener("DOMContentLoaded", this.attach),
         this
