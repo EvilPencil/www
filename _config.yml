@@ -1,2 +1,16 @@
 title: danilovandrey
 description: This is the repository for the danilovandrey website. 
+
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:year/:i_month/:i_day/:title"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
