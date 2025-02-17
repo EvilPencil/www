@@ -6,9 +6,7 @@ author: Данилов Андрей Викторович.
 collections:
   pages:
     output: true
-   # permalink: "/:name"
-
-permalink: /:categories/:year/:month/:day/:title:output_ext
+    permalink: "/:name"
 
 # Front Matter Defaults
 defaults:
@@ -17,7 +15,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/:year/:i_month/:i_day/:title"
+      permalink: "/:categories/:year/:i_month/:i_day/:title"
   - scope:
       path: ""
       type: "pages"
