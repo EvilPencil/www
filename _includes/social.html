@@ -7,7 +7,7 @@
               {% for item in site.data.social %}
               <a
               href="{{ item.link }}"
-              class="text-sm uppercase font-medium text-slate-500 hover:text-green-500"
+              class="items-center inline-flex w-full focus:outline-disc bg-green-50 duration-200 focus:ring-2 focus:ring-green-60 focus:ring-offset-2 font-medium lg:w-auto h-9 hover:bg-green-100 justify-center px-8 py-1 md:w-auto rounded-full text-green-600 text-center text-xs">
               {% if page.url==item.link %}
               {% endif %}>
               {{ item.name }}
