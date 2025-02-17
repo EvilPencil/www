@@ -1,12 +1,6 @@
-- name: Главная
-  link: /
 - name: Блог
   link: /blog
 - name: ЧаВо
   link: /faq
 - name: О себе
   link: /about
-- name: Контакты
-  link: /contacts
-- name: Подписаться
-  link: /subscribe

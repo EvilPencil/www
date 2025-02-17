@@ -1,0 +1,6 @@
+- name: Контакты
+  link: /contacts
+- name: Подписаться
+  link: /subscribe
+- name: GitHub
+  link: https://github.com/EvilPencil/www

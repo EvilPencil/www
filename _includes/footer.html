@@ -9,8 +9,13 @@
         <ul role="list" class="flex flex-col gap-1 lg:flex-row w-full lg:gap-6">
           <li>
             {% for item in site.data.footer %}
-            <a href="{{ item.link }}" class="text-sm uppercase font-medium text-slate-500 hover:text-green-500" {% if
-              page.url==item.link %} {% endif %}>{{ item.name }}
+            <a
+            href="{{ item.link }}"
+            class="text-sm uppercase font-medium text-slate-500 hover:text-green-500"
+            target="_blank"
+            {% if page.url==item.link %}
+            {% endif %}>
+            {{ item.name }}
             </a>
             {% endfor %}
           </li>

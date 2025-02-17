@@ -1,0 +1,21 @@
+<section class="overflow-hidden relative">
+    <div class="px-8 md:px-12 lg:px-24 max-w-7xl mx-auto py-12 lg:py-24">
+      <div class="gap-8 flex flex-col lg:flex-row items-baseline">
+        <div class="lg:col-span-full lg:ml-auto">
+          <ul role="list" class="flex flex-col gap-1 lg:flex-row w-full lg:gap-6">
+            <li>
+              {% for item in site.data.footer_nav %}
+              <a
+              href="{{ item.link }}"
+              class="text-sm uppercase font-medium text-slate-500 hover:text-green-500"
+              {% if page.url==item.link %}
+              {% endif %}>
+              {{ item.name }}
+              </a>
+              {% endfor %}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
