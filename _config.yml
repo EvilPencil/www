@@ -6,7 +6,7 @@ author: Данилов Андрей Викторович.
 collections:
   pages:
     output: true
-    permalink: "/:name"
+   # permalink: "/:name"
 
 permalink: pretty
 
