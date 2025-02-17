@@ -8,7 +8,7 @@ collections:
     output: true
    # permalink: "/:name"
 
-permalink: pretty
+permalink: /:categories/:year/:month/:day/:title:output_ext
 
 # Front Matter Defaults
 defaults:
