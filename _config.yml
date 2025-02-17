@@ -15,7 +15,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/:categories/:year/:i_month/:i_day/:title"
+      permalink: "none"
   - scope:
       path: ""
       type: "pages"
