@@ -5,6 +5,15 @@ description: static site generator
 author: Geoffrey Callaghan
 images: /assets/images/astro-starter-theme.jpg
 ---
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
 <p>{{ site.categories }}</p>
 <p><a href="https://astro.build/">Astro</a>
     is a popular static site generator that is ideal for crafting fast and
