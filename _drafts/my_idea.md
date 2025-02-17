@@ -3,6 +3,9 @@ layout: post
 ---
 Это черновик. Тут я буду записывать идеи, заметки.
 
+### кастомизация
+1. цвета карт bg-pink-100 text-pink-500 bg-yellow-100 text-yellow-500 bg-blue-100 text-blue-500 bg-green-100 text-green-500
+
 ### Ссылки по веб разработке
 https://jekyllrb.com/
 https://jamstackthemes.dev/ssg/jekyll/
