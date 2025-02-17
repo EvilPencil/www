@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="8h0yfp832pubkulq">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<title>{{ page.title }} &mdash; {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title  }}{% else %}{{ site.title  }}{% endif %} &mdash;
+       {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</title>
 <!-- HTML in your document's head -->
 <!-- link rel="stylesheet" href="/assets/css/inter.css">
 <link rel="stylesheet" href="/assets/css/css.css" -->
