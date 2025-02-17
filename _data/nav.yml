@@ -1,10 +1,10 @@
-- name: Дом
+- name: Главная
   link: /
 - name: Блог
   link: /blog
 - name: ЧаВо
   link: /faq
-- name: О мне
+- name: О себе
   link: /about
 - name: Контакты
   link: /contacts
