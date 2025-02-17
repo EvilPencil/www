@@ -8,6 +8,7 @@ collections:
     output: true
     permalink: "/:name"
 
+permalink: pretty
 
 # Front Matter Defaults
 defaults:
