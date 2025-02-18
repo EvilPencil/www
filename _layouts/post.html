@@ -17,7 +17,7 @@ layout: default
                     </p>
                     <p class="text-sm mt-2 text-slate-500 max-w-xl mx-auto"> <em>{{ page.author }}</em> </p>
                     <ul class="flex flex-wrap gap-2 mt-4 justify-center" role="list">
-                        {% for category in site.categories %}
+                        {% for category in post.categories %}
                         <a href="https://danilovandrey.ru/tags/Astro">
                             <li class=" inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700">
                                 {{ category[0] }}
