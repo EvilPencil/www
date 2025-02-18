@@ -9,7 +9,7 @@ collections:
     permalink: "/:name"
   blog:
     output: true
-    permalink: /:collection/:categories
+    permalink: /:collection/:category
 
 # Front Matter Defaults
 defaults:
