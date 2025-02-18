@@ -7,9 +7,9 @@ collections:
   pages:
     output: true
     permalink: "/:name"
-  projects:
+  categories:
     output: true
-    permalink: /:collection/:categories:output_ext
+    permalink: "/:collection/:name"
 
 # Front Matter Defaults
 defaults:
