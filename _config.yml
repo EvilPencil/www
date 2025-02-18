@@ -7,7 +7,7 @@ collections:
   pages:
     output: true
     permalink: "/:name"
-  categories:
+  blog:
     output: true
     permalink: /:collection/:categories
 
