@@ -11,8 +11,6 @@ collections:
   pages:
     output: true
     permalink: "/:name"
-  category:
-    output: true
 
 # Front Matter Defaults
 defaults:
