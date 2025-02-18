@@ -2,7 +2,7 @@
     <ol role="list" class="flex flex-wrap gap-3 lg:col-span-3 lg:ml-auto items-center">
       {% for category in site.categories %}
         <li class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700  ">
-            <a href="{{ category.url }}">{{ category.title }}</a>
+            <a href="{{ category.url }}">{{ category[0] }}</a>
         </li>
       {% endfor %}
     </ol>
