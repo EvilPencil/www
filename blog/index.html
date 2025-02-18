@@ -14,7 +14,6 @@ description: Добро пожаловать! Так называется мой
                 повлиявшие на моё восприятие видимого и не видимого мира.
             </p>
         </div>
-        {%- include categories.html -%}
         <ul class="grid grid-cols-1 mt-12 list-none gap-x-2 gap-y-24 lg:mt-24">
             {% for post in site.posts %}
             <li> <a href="{{ post.url }}" title="{{ post.title }}" class="group flex flex-col h-full justify-between">
