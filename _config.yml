@@ -8,9 +8,8 @@ collections:
   pages:
     output: true
     permalink: "/:name"
-  blog:
+  category:
     output: true
-    permalink: /:collection/:category
 
 # Front Matter Defaults
 defaults:
@@ -25,6 +24,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
 
 # Conversion
 markdown: kramdown
